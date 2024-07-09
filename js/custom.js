@@ -2,7 +2,15 @@
   (function ($) {
   
   "use strict";
-
+	
+	//DatePicker
+	$('#date').datepicker({
+		dateFormat: 'dd/mm/yy',
+		minDate: 0,
+		changeMonth: true,
+        changeYear: true,
+	});
+	
     // NAVBAR
     $('.navbar-nav .nav-link').click(function(){
         $(".navbar-collapse").collapse('hide');
